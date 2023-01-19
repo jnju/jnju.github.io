@@ -1,0 +1,1054 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "SANGJU Gyeongcheon Island";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/SANGJUGyeongcheonIsland.woff") format("woff");
+}
+@font-face {
+  src: url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap");
+  font-family: "NotoSerifKR-Regular";
+}
+@font-face {
+  font-family: "SANGJU Gyeongcheon Island";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/SANGJUGyeongcheonIsland.woff") format("woff");
+}
+@font-face {
+  src: url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap");
+  font-family: "NotoSerifKR-Regular";
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "SANGJU Gyeongcheon Island";
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 3.125em;
+}
+
+h2 {
+  font-size: 0;
+}
+
+h3 {
+  color: black;
+  font-size: 3.125em;
+}
+
+h4 {
+  color: black;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1em;
+  font-family: "NotoSerifKR-Regular";
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    width: 100%;
+    height: 100%;
+    max-width: 2560px;
+  }
+}
+.container {
+  width: 100%;
+  padding: 0 20px;
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../../../images/background/detail_page_main_background.png);
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+  }
+}
+.wrapper .flexWrapper header {
+  height: 80px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper header {
+    width: 370px;
+    height: auto;
+    background-image: url(../../../../images/background/detail_page_header_background.png);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper header .header {
+    position: fixed;
+  }
+}
+.wrapper .flexWrapper header .header .logoMenu {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper header .header .logoMenu {
+    display: block;
+    padding-top: 70px;
+    padding-left: 100px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper header .header .logoMenu .logo a {
+    width: 190px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper header .header .logoMenu .menu {
+    margin-top: 130px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper header .header .logoMenu .menu .gnb {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper header .header .logoMenu .menu .gnb li {
+    padding-bottom: 60px;
+  }
+  .wrapper .flexWrapper header .header .logoMenu .menu .gnb li:hover ul {
+    height: 100px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper header .header .logoMenu .menu .gnb li:first-child {
+    padding-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper header .header .logoMenu .menu .gnb li .subMenu {
+    height: 0px;
+    overflow: hidden;
+    padding-top: 40px;
+    transition: all 0.5s;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper header .header .logoMenu .menu .gnb li .subMenu li {
+    display: flex;
+    padding-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper header .header .logoMenu .menu .gnb li .subMenu li a {
+    padding-left: 5px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-family: "NotoSerifKR-Regular";
+  }
+}
+.wrapper .flexWrapper header .header .mobileLogoMenu {
+  position: relative;
+  z-index: 5;
+  display: flex;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper header .header .mobileLogoMenu {
+    display: none;
+  }
+}
+.wrapper .flexWrapper header .header .mobileLogoMenu .mobileLogo {
+  position: fixed;
+  top: 22px;
+  left: 20px;
+}
+.wrapper .flexWrapper header .header .mobileLogoMenu .beforeMenu {
+  position: fixed;
+  top: 38px;
+  right: 20px;
+  cursor: pointer;
+}
+.wrapper .flexWrapper header .header .mobileLogoMenu .beforeMenu span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #000;
+}
+.wrapper .flexWrapper header .header .mobileLogoMenu .beforeMenu span:nth-child(2) {
+  margin: 5px 0;
+}
+.wrapper .flexWrapper header .header .mobileLogoMenu .afterMenu {
+  display: none;
+  position: fixed;
+  top: 38px;
+  right: 20px;
+  cursor: pointer;
+}
+.wrapper .flexWrapper header .header .mobileLogoMenu .afterMenu:after {
+  position: fixed;
+  top: 25px;
+  right: 20px;
+  content: "×";
+  font-size: 50px;
+  color: black;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main {
+    width: 1180px;
+    margin: 0 auto;
+  }
+}
+.wrapper .flexWrapper main .main .mainSubMenu {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .mainSubMenu {
+    display: block;
+    width: 100%;
+    height: 70px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .mainSubMenu ul {
+    display: flex;
+    position: absolute;
+    top: 50px;
+    right: 100px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .mainSubMenu ul li {
+    padding-left: 25px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .mainSubMenu ul li a {
+    font-family: "NotoSerifKR-Regular";
+    font-size: 14px;
+  }
+}
+.wrapper .flexWrapper main .main .introStart {
+  margin-top: 30px;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .introStart {
+    text-align: left;
+    margin-top: 130px;
+  }
+}
+.wrapper .flexWrapper main .main .introStart h3 {
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-family: "SANGJU Gyeongcheon Island";
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .introStart h3 {
+    font-size: 50px;
+  }
+}
+.wrapper .flexWrapper main .main .introStart .introMenu ul {
+  display: flex;
+  justify-content: center;
+}
+.wrapper .flexWrapper main .main .introStart .introMenu ul li {
+  padding: 0 30px;
+  font-family: "NotoSerifKR-Regular";
+  font-size: 18px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .introStart .introMenu ul li {
+    font-size: 24px;
+  }
+}
+.wrapper .flexWrapper main .main .introStart .introMenu ul li:first-child {
+  border-right: 1px solid black;
+}
+.wrapper .flexWrapper main .main .label1,
+.wrapper .flexWrapper main .main .label2,
+.wrapper .flexWrapper main .main .label3 {
+  display: none;
+  clear: both;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .label1,
+.wrapper .flexWrapper main .main .label2,
+.wrapper .flexWrapper main .main .label3 {
+    display: flex;
+    margin-top: 100px;
+    font-size: 32px;
+  }
+  .wrapper .flexWrapper main .main .label1 li,
+.wrapper .flexWrapper main .main .label2 li,
+.wrapper .flexWrapper main .main .label3 li {
+    padding: 24px 15px;
+  }
+}
+.wrapper .flexWrapper main .main .label1 li {
+  padding: 24px 15px;
+}
+.wrapper .flexWrapper main .main .label1 li:first-child {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.wrapper .flexWrapper main .main .label1 li:first-child a {
+  color: #fff;
+}
+.wrapper .flexWrapper main .main .label2 li {
+  padding: 24px 15px;
+}
+.wrapper .flexWrapper main .main .label2 li:nth-child(2) {
+  border: 1px solid #000;
+  border-bottom: none;
+}
+.wrapper .flexWrapper main .main .label3 li:last-child {
+  border: 1px solid #000;
+  border-bottom: none;
+}
+.wrapper .flexWrapper main .main .story {
+  display: none;
+  background-image: url(../../img/past_pic.png);
+  text-align: center;
+  font-size: 3.125em;
+  height: 234px;
+  width: 100%;
+  padding-top: 20%;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .story {
+    display: block;
+    width: 100%;
+    height: 600px;
+    padding: 5%;
+    background-image: url(../../img/past_pic_pc.png);
+  }
+}
+.wrapper .flexWrapper main .main .story span {
+  color: #fff;
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .story span {
+    line-height: 2.5em;
+    display: block;
+  }
+}
+.wrapper .flexWrapper main .main .story p {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .story p {
+    display: flex;
+    color: #fff;
+    font-size: 0.7em;
+    font-family: "SANGJU Gyeongcheon Island";
+  }
+}
+.wrapper .flexWrapper main .main .inner div {
+  height: 300px;
+}
+.wrapper .flexWrapper main .main .mobile-story {
+  margin-top: 50px;
+  background-image: url(../../img/past_pic.png);
+  text-align: center;
+}
+.wrapper .flexWrapper main .main .mobile-story .bx-pager {
+  margin-left: 40%;
+}
+.wrapper .flexWrapper main .main .mobile-story .bx-pager-item {
+  float: left;
+  margin-top: 20px;
+  margin-left: 16px;
+}
+.wrapper .flexWrapper main .main .mobile-story .bx-prev {
+  float: left;
+  margin-left: 0px;
+}
+.wrapper .flexWrapper main .main .mobile-story .bx-next {
+  float: right;
+  margin-right: 0px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .mobile-story {
+    display: none;
+  }
+}
+.wrapper .flexWrapper main .main .title {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  clear: both;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .title {
+    display: none;
+  }
+}
+.wrapper .flexWrapper main .main .title h4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.wrapper .flexWrapper main .main .title h4 .next {
+  color: #ccc;
+}
+.wrapper .flexWrapper main .main .title h4 div.gray a {
+  color: #ccc;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .everypro,
+.wrapper .flexWrapper main .main .everydis {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 310px;
+    width: 100%;
+  }
+}
+.wrapper .flexWrapper main .main .everypro {
+  margin-bottom: 100px;
+}
+.wrapper .flexWrapper main .main .dis,
+.wrapper .flexWrapper main .main .pro {
+  display: flex;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .dis img,
+.wrapper .flexWrapper main .main .pro img {
+    z-index: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .dis,
+.wrapper .flexWrapper main .main .pro {
+    display: block;
+    width: 30%;
+    margin-left: 10px;
+  }
+  .wrapper .flexWrapper main .main .dis:first-child,
+.wrapper .flexWrapper main .main .pro:first-child {
+    margin-left: 0;
+  }
+}
+.wrapper .flexWrapper main .main .dis .title,
+.wrapper .flexWrapper main .main .pro .title {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .dis .title,
+.wrapper .flexWrapper main .main .pro .title {
+    position: absolute;
+    display: block;
+  }
+}
+.wrapper .flexWrapper main .main .dis .desc,
+.wrapper .flexWrapper main .main .pro .desc {
+  color: #fff;
+  height: 100%;
+  width: 70%;
+  padding: 0 15px;
+  margin-bottom: 50px;
+  background-repeat: no-repeat;
+}
+.wrapper .flexWrapper main .main .dis .desc .dis-text,
+.wrapper .flexWrapper main .main .pro .desc .dis-text {
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .dis .desc,
+.wrapper .flexWrapper main .main .pro .desc {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    z-index: 3;
+  }
+  .wrapper .flexWrapper main .main .dis .desc .title,
+.wrapper .flexWrapper main .main .pro .desc .title {
+    font-size: 2.5em;
+    margin-top: 40%;
+    margin-left: 25%;
+  }
+  .wrapper .flexWrapper main .main .dis .desc .show,
+.wrapper .flexWrapper main .main .pro .desc .show {
+    display: none;
+  }
+}
+.wrapper .flexWrapper main .main .dis .desc h4,
+.wrapper .flexWrapper main .main .pro .desc h4 {
+  font-family: "NotoSerifKR-Regular";
+  color: #fff;
+  line-height: 2.6em;
+}
+.wrapper .flexWrapper main .main .dis .desc p,
+.wrapper .flexWrapper main .main .pro .desc p {
+  line-height: 2.2em;
+}
+.wrapper .flexWrapper main .main .dis .odd,
+.wrapper .flexWrapper main .main .pro .odd {
+  background-image: url(../../img/black_object.png);
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .dis .odd,
+.wrapper .flexWrapper main .main .pro .odd {
+    background-image: url(../../img/black_pc.png);
+  }
+}
+.wrapper .flexWrapper main .main .dis .solsol,
+.wrapper .flexWrapper main .main .pro .solsol {
+  position: relative;
+  z-index: 2;
+}
+.wrapper .flexWrapper main .main .dis .even,
+.wrapper .flexWrapper main .main .pro .even {
+  margin-left: 30%;
+  background-image: url(../../img/black_object_2.png);
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .dis .even,
+.wrapper .flexWrapper main .main .pro .even {
+    background-image: url(../../img/black_pc.png);
+    margin: 0;
+  }
+}
+.wrapper .flexWrapper main .main .dis .even h4,
+.wrapper .flexWrapper main .main .pro .even h4 {
+  text-align: right;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .dis .even h4,
+.wrapper .flexWrapper main .main .pro .even h4 {
+    text-align: left;
+  }
+}
+.wrapper .flexWrapper main .main .dis img {
+  position: absolute;
+  margin-top: -38px;
+}
+.wrapper .flexWrapper main .main .dis img {
+  margin-top: 13px;
+  margin-left: 65%;
+}
+.wrapper .flexWrapper main .main .dis img.do {
+  width: 23%;
+  height: 300px;
+}
+.wrapper .flexWrapper main .main .dis img.dae {
+  margin-top: 70px;
+  margin-left: -5%;
+}
+.wrapper .flexWrapper main .main .dis img.ja {
+  width: 70px;
+  margin-top: 30px;
+}
+.wrapper .flexWrapper main .main .dis img.back {
+  width: 85px;
+  margin-top: 20px;
+  margin-left: 5%;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .dis img.do {
+    height: 350px;
+    width: 8%;
+    margin-top: -380px;
+    margin-left: 120px;
+  }
+  .wrapper .flexWrapper main .main .dis img.dae {
+    margin-top: -380px;
+    margin-left: 120px;
+  }
+  .wrapper .flexWrapper main .main .dis img.ja {
+    margin-top: -430px;
+    margin-left: 120px;
+  }
+  .wrapper .flexWrapper main .main .dis img.back {
+    margin-top: -470px;
+    margin-left: 150px;
+  }
+}
+.wrapper .flexWrapper main .main .dis .ja {
+  margin-top: 100px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .dis .ja {
+    margin-top: 0;
+  }
+}
+.wrapper .flexWrapper main .main .dis .ba {
+  margin-top: 110px;
+  line-height: 0.8em;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .dis:first-child {
+    margin-bottom: 280px;
+  }
+}
+.wrapper .flexWrapper main .main .pro img {
+  position: absolute;
+  width: 28%;
+  margin-left: 65%;
+}
+.wrapper .flexWrapper main .main .pro img.lee {
+  margin-top: 80px;
+}
+.wrapper .flexWrapper main .main .pro img.gam {
+  margin-top: 65px;
+  margin-left: 3%;
+}
+.wrapper .flexWrapper main .main .pro img.juck {
+  width: 73px;
+  margin-top: -6px;
+}
+.wrapper .flexWrapper main .main .pro img.sol {
+  z-index: 0;
+  width: 43%;
+  margin-top: 200px;
+  margin-left: -4%;
+}
+.wrapper .flexWrapper main .main .pro img.moon {
+  width: 88px;
+  margin-top: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .pro img {
+    width: 10%;
+  }
+  .wrapper .flexWrapper main .main .pro img.lee {
+    margin-top: -360px;
+    margin-left: 120px;
+  }
+  .wrapper .flexWrapper main .main .pro img.gam {
+    margin-top: -360px;
+    margin-left: 120px;
+  }
+  .wrapper .flexWrapper main .main .pro img.juck {
+    margin-top: -390px;
+    margin-left: 120px;
+  }
+  .wrapper .flexWrapper main .main .pro img.sol {
+    width: 175px;
+    margin-top: -360px;
+    margin-left: 120px;
+  }
+  .wrapper .flexWrapper main .main .pro img.moon {
+    margin-top: -380px;
+    margin-left: 120px;
+  }
+  .wrapper .flexWrapper main .main .pro:nth-child(1), .wrapper .flexWrapper main .main .pro:nth-child(2) {
+    margin-bottom: 280px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper footer .container {
+    margin: 0;
+  }
+}
+.wrapper footer .footer {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper footer .footer {
+    width: 100%;
+    padding: 120px 185px 80px 545px;
+  }
+}
+.wrapper footer .footer .footInfo {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper footer .footer .footInfo {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+}
+.wrapper footer .footer .footInfo address {
+  font-style: normal;
+  font-family: "NotoSerifKR-Regular";
+}
+.wrapper footer .footer .footInfo p {
+  margin: 20px 0;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper footer .footer .footInfo p {
+    margin: 0;
+  }
+}
+.wrapper footer .footer .footBox {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper footer .footer .footBox {
+    display: flex;
+    height: 250px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+}
+.wrapper footer .footer .footBox .footLogoCopy {
+  padding: 30px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper footer .footer .footBox .footLogoCopy {
+    width: 30%;
+    padding: 0;
+    border: 0;
+  }
+}
+.wrapper footer .footer .footBox .footLogoCopy a {
+  color: white;
+  font-size: 60px;
+}
+.wrapper footer .footer .footBox .footLogoCopy p {
+  font-size: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper footer .footer .footBox .footLogoCopy .copyright {
+    font-size: 12px;
+    font-family: "NotoSerifKR-Regular";
+  }
+}
+.wrapper footer .footer .footBox .footSns {
+  padding: 30px;
+  border-bottom: 1px solid #ccc;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper footer .footer .footBox .footSns {
+    position: relative;
+    width: 40%;
+    height: 250px;
+    border-bottom: 0;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+  }
+}
+.wrapper footer .footer .footBox .footSns .footSnsCont {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper footer .footer .footBox .footSns .footSnsCont {
+    padding: 60px 80px;
+  }
+}
+.wrapper footer .footer .footBox .footSns .footSnsCont li {
+  padding: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper footer .footer .footBox .footSns .footSnsCont li {
+    padding-right: 15px;
+  }
+  .wrapper footer .footer .footBox .footSns .footSnsCont li:last-child {
+    padding-right: 0;
+  }
+}
+.wrapper footer .footer .footBox .footSns .footSnsCont li img {
+  width: 50px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper footer .footer .footBox .footSns .footSnsCont li img {
+    width: 60px;
+    opacity: 0.5;
+    transition: all 0.5s;
+  }
+  .wrapper footer .footer .footBox .footSns .footSnsCont li img:hover {
+    opacity: 1;
+  }
+}
+.wrapper footer .footer .footBox .footMenu {
+  padding: 40px 0;
+  font-size: 14px;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper footer .footer .footBox .footMenu {
+    width: 30%;
+    padding: 0;
+    font-size: 14px;
+  }
+}
+.wrapper footer .footer .footBox .footMenu ul {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+}
+.wrapper footer .footer .footBox .footMenu ul:last-child {
+  text-align: left;
+}
+.wrapper footer .footer .footBox .footMenu ul li {
+  width: 33%;
+  padding: 0 5px;
+  text-align: center;
+}
+.wrapper footer .footer .footBox .footMenu ul li a {
+  width: 100%;
+  color: white;
+}
+
+.wrapper1 {
+  display: none;
+  position: fixed;
+  z-index: 4;
+  width: 100%;
+  height: 100vh;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper1 {
+    display: none;
+  }
+}
+.wrapper1 .wrap-inner {
+  height: 100vh;
+  background-image: url(../../../../images/background/detail_page_main_background.png);
+}
+@media screen and (min-width: 1024px) {
+  .wrapper1 .wrap-inner {
+    display: none;
+  }
+}
+.wrapper1 .wrap-inner .container1 {
+  width: 100%;
+  padding: 0 20px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper1 .wrap-inner .container1 {
+    display: flex;
+    padding: 0 130px;
+    flex-wrap: wrap;
+  }
+}
+.wrapper1 .wrap-inner .container1 .menu1 {
+  position: relative;
+  margin-top: 0;
+  height: 550px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper1 .wrap-inner .container1 .menu1 {
+    position: relative;
+    width: 77%;
+    height: 820px;
+  }
+}
+.wrapper1 .wrap-inner .container1 .menu1 .gnb {
+  position: absolute;
+  top: 8%;
+  right: 0;
+  left: 0;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper1 .wrap-inner .container1 .menu1 .gnb {
+    position: absolute;
+    top: 60px;
+  }
+}
+.wrapper1 .wrap-inner .container1 .menu1 .gnb #extra {
+  margin: 50px 0 70px;
+}
+.wrapper1 .wrap-inner .container1 .menu1 .gnb li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper1 .wrap-inner .container1 .menu1 .gnb li {
+    display: initial;
+  }
+}
+.wrapper1 .wrap-inner .container1 .menu1 .gnb li a {
+  font-size: 34px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper1 .wrap-inner .container1 .menu1 .gnb li a {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper1 .wrap-inner .container1 .menu1 .gnb li .gnb-title {
+    margin: 50px 0 20px 0;
+  }
+}
+.wrapper1 .wrap-inner .container1 .menu1 .gnb li .sub-gnb li {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper1 .wrap-inner .container1 .menu1 .gnb li .sub-gnb li {
+    display: flex;
+    justify-content: left;
+  }
+}
+.wrapper1 .wrap-inner .container1 .menu1 .gnb li .sub-gnb li a {
+  color: #a3a3a3;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper1 .wrap-inner .container1 .menu1 .gnb li .sub-gnb li a {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+}
+.wrapper1 .wrap-inner .container1 .menu1 .gnb li .sub-gnb .sub-gnb-li {
+  justify-content: end;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper1 .wrap-inner .container1 .menu1 .gnb li .sub-gnb .sub-gnb-li {
+    justify-content: left;
+  }
+}
+.wrapper1 .wrap-inner .container1 .menu1 .gnb li .sub-gnb .sub-gnb-li2 {
+  flex-direction: column;
+  text-align: right;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper1 .wrap-inner .container1 .menu1 .gnb li .sub-gnb .sub-gnb-li2 {
+    text-align: left;
+    flex-direction: row;
+  }
+}
+.wrapper1 .wrap-inner .container1 .menu2 {
+  font-family: "NotoSerifKR-Regular";
+  font-size: 12px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper1 .wrap-inner .container1 .menu2 {
+    width: 23%;
+    margin: 0;
+  }
+}
+.wrapper1 .wrap-inner .container1 .menu2 .close-btn-pc {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper1 .wrap-inner .container1 .menu2 .close-btn-pc {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 150px;
+  }
+}
+.wrapper1 .wrap-inner .container1 .menu2 ul {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper1 .wrap-inner .container1 .menu2 ul {
+    display: initial;
+    font-family: "SANGJU Gyeongcheon Island";
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper1 .wrap-inner .container1 .menu2 ul li {
+    margin-top: 130px;
+  }
+}
+.wrapper1 .wrap-inner .container1 .menu2 ul li a {
+  margin: 0 20px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper1 .wrap-inner .container1 .menu2 ul li a {
+    color: #a3a3a3;
+  }
+}
+.wrapper1 .wrap-inner .container1 span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #a3a3a3;
+  margin-top: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper1 .wrap-inner .container1 .footer {
+    display: flex;
+    width: 100%;
+  }
+}
+.wrapper1 .wrap-inner .container1 .footer .sns1 {
+  padding: 40px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper1 .wrap-inner .container1 .footer .sns1 {
+    width: 65%;
+    padding: 20px 0;
+  }
+}
+.wrapper1 .wrap-inner .container1 .footer .sns1 .footSns1 {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper1 .wrap-inner .container1 .footer .sns1 .footSns1 {
+    justify-content: left;
+  }
+}
+.wrapper1 .wrap-inner .container1 .footer .sns1 .footSns1 li {
+  padding: 10px;
+}
+.wrapper1 .wrap-inner .container1 .footer .sns1 .footSns1 li img {
+  width: 40px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper1 .wrap-inner .container1 .footer .sns1 .footSns1 li img {
+    width: 40px;
+  }
+}
+.wrapper1 .wrap-inner .container1 .footer .footerInfo1 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11.5px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper1 .wrap-inner .container1 .footer .footerInfo1 {
+    width: 35%;
+    padding: 0;
+    font-size: 16px;
+    align-items: center;
+    justify-content: end;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper1 .wrap-inner .container1 .footer .footerInfo1 p:last-child {
+    margin-left: 100px;
+  }
+}/*# sourceMappingURL=past.css.map */
