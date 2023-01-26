@@ -30,7 +30,11 @@ HTML과 SASS, 제이쿼리와 자바 스크립트를 사용했습니다.
 
 그래서 한지 질감의 백그라운드 배경을 사용했습니다.
 
-
+![detail_black_logo](https://user-images.githubusercontent.com/114633681/214970823-2e1662e3-6d7f-44d2-a56e-c3dd8dd90cb7.png)
+![color1](https://user-images.githubusercontent.com/114633681/214970898-97a8834b-66ac-4411-839c-4c5a61103880.png)
+![color2](https://user-images.githubusercontent.com/114633681/214970859-eb960857-a333-4beb-9b6f-f6ff1d204284.png)
+![color3](https://user-images.githubusercontent.com/114633681/214970912-ef46c543-9931-447f-911e-ab4d684f8c91.png)
+![color4](https://user-images.githubusercontent.com/114633681/214970926-25e50ab2-c46d-4440-93b2-340b7bbafc5f.png)
 
 로고 역시 전통주를 떠올리는 항아리와 표주박 이미지를 사용하여 제작했습니다. 
 
